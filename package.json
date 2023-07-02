@@ -1,0 +1,28 @@
+{
+  "name": "supabase-drizzle-express",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.ts",
+  "scripts": {
+    "dev": "tsx watch -r dotenv/config src/index.ts",
+    "introspect": "drizzle-kit introspect:pg",
+    "generate": "drizzle-kit generate:pg",
+    "migrate": "tsx -r dotenv/config src/migrate.ts"
+  },
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "devDependencies": {
+    "@types/express": "^4.17.17",
+    "@types/node": "^20.3.3",
+    "drizzle-kit": "^0.18.1",
+    "tsx": "^3.12.7",
+    "typescript": "^5.1.6"
+  },
+  "dependencies": {
+    "dotenv": "^16.3.1",
+    "drizzle-orm": "^0.26.5",
+    "express": "^4.18.2",
+    "postgres": "^3.3.5"
+  }
+}
